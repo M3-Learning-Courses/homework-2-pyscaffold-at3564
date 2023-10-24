@@ -1,83 +1,74 @@
 # This code was generated using ChatGPT GPT-3.5
 
 import unittest
-from tic_tac_toe.tic_tac_toe import check_winner, is_board_full, take_input
+from unittest.mock import patch
+from io import StringIO
+from tic_tac_toe.tic_tac_toe import TicTacToe
 
 class TestTicTacToe(unittest.TestCase):
 
-    def test_check_winner_rows(self):
-        board_1 = [['X', 'X', 'X'],
-                   ['O', 'O', 'X'],
-                   ['O', 'X', 'O']]
-        self.assertTrue(check_winner(board_1, 'X'))
-
-        board_2 = [['O', 'O', 'X'],
-                   ['O', 'X', 'X'],
-                   ['O', 'X', 'O']]
-        self.assertTrue(check_winner(board_2, 'O'))
-
-        board_3 = [['X', 'O', 'X'],
-                   ['O', 'O', 'O'],
-                   ['X', 'X', 'O']]
-        self.assertTrue(check_winner(board_3, 'O'))
-
-        board_4 = [['X', 'O', 'X'],
-                   ['O', 'X', 'O'],
-                   ['X', 'O', 'X']]
-        self.assertFalse(check_winner(board_4, 'X'))  # Updated this line to expect True
-
-    def test_check_winner_columns(self):
-        board_1 = [['X', 'O', 'X'],
-                   ['X', 'O', 'X'],
-                   ['O', ' ', 'X']]
-        self.assertTrue(check_winner(board_1, 'X'))
-
-        board_2 = [['O', 'O', 'X'],
-                   ['X', 'O', 'X'],
-                   ['O', 'O', 'X']]
-        self.assertTrue(check_winner(board_2, 'X'))
-
-        board_3 = [['X', 'O', 'O'],
-                   ['X', 'O', 'X'],
-                   ['O', 'O', 'X']]
-        self.assertTrue(check_winner(board_3, 'O'))
-
-    def test_check_winner_diagonals(self):
-        board_1 = [['X', 'O', 'X'],
-                   ['O', 'X', 'O'],
-                   ['O', ' ', 'X']]
-        self.assertTrue(check_winner(board_1, 'X'))
-
-        board_2 = [['O', 'O', 'X'],
-                   ['O', 'X', 'O'],
-                   ['X', 'O', 'O']]
-        self.assertTrue(check_winner(board_2, 'X'))
-
-    def test_is_board_full_false(self):
-        board_1 = [['X', 'O', 'X'],
-                   ['O', ' ', 'O'],
-                   ['O', 'X', 'X']]
-        self.assertFalse(is_board_full(board_1))
-
-    def test_is_board_full_true(self):
-        board_1 = [['X', 'O', 'X'],
-                   ['O', 'X', 'O'],
-                   ['O', 'X', 'X']]
-        self.assertTrue(is_board_full(board_1))
-
     def test_take_input(self):
-        board = [['X', 'O', 'X'],
-                 ['O', ' ', 'O'],
-                 ['O', 'X', 'X']]
+        game = TicTacToe()
+        self.assertTrue(game.take_input(5))
+        self.assertFalse(game.take_input(5))  # Attempting to take the same position twice
 
-        def mock_input_func(prompt):
-            return '5'
+    def test_check_winner(self):
+        game = TicTacToe()
+        game.board = [['X', 'O', 'X'],
+                      ['O', 'X', 'O'],
+                      ['X', ' ', 'O']]
+        self.assertTrue(game.check_winner())
 
-        row, col = take_input('X', board, mock_input_func)
-        self.assertEqual(row, 1)
-        self.assertEqual(col, 1)
+        game.board = [['X', 'O', 'X'],
+                      ['O', 'X', 'O'],
+                      ['O', 'X', 'O']]
+        self.assertFalse(game.check_winner())
+
+        game.board = [['X', 'O', 'X'],
+                      ['O', 'X', 'O'],
+                      ['O', 'O', 'X']]
+        self.assertTrue(game.check_winner())
+
+        game.board = [['X', 'O', 'X'],
+                      ['O', 'X', 'O'],
+                      ['O', 'X', 'X']]
+        self.assertTrue(game.check_winner())
+
+    def test_is_board_full(self):
+        game = TicTacToe()
+        game.board = [['X', 'O', 'X'],
+                      ['O', ' ', 'O'],
+                      ['O', 'X', 'X']]
+        self.assertFalse(game.is_board_full())
+
+        game.board = [['X', 'O', 'X'],
+                      ['O', 'X', 'O'],
+                      ['O', 'X', 'X']]
+        self.assertTrue(game.is_board_full())
+    
+    @patch('sys.stdout', new_callable=StringIO)
+    @patch('builtins.input', side_effect=['5', '2', '1', '9', '6', '4', '3', '7', 'exit'])
+    def test_play_game(self, mock_input, mock_output):
+        game = TicTacToe()
+        game.play_game()
+
+        expected_output = [
+            "Welcome to Tic-Tac-Toe!\n",
+            "Player X, enter the position (1-9) or 'exit' to quit:\n",
+            "Player O, enter the position (1-9) or 'exit' to quit:\n",
+            "Player X, enter the position (1-9) or 'exit' to quit:\n",
+            "Player O, enter the position (1-9) or 'exit' to quit:\n",
+            "Player X, enter the position (1-9) or 'exit' to quit:\n",
+            "Player O, enter the position (1-9) or 'exit' to quit:\n",
+            "Player X, enter the position (1-9) or 'exit' to quit:\n",
+            "Player O, enter the position (1-9) or 'exit' to quit:\n",
+            "Exiting the game.\n"
+        ]
+        
+        output = mock_output.getvalue()
+        for item in expected_output:
+            self.assertIn(item, output)
 
 
 if __name__ == '__main__':
     unittest.main()
-
