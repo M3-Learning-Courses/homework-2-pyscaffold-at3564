@@ -1,136 +1,135 @@
 ### I can't seem to upload the output of "tox -e docs" to github but here is the output of "readme.html"
-###
 
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <!DOCTYPE html>
+    <html class="writer-html5" lang="en" >
+    <head>
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tic_tac_toe &mdash; tic_tac_toe 0.0.post1.dev9+g81b0717.d20231025 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=deb3d62e"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Contributing" href="contributing.html" />
-    <link rel="prev" title="tic_tac_toe" href="index.html" /> 
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic_tac_toe &mdash; tic_tac_toe 0.0.post1.dev9+g81b0717.d20231025 documentation</title>
+        <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <!--[if lt IE 9]>
+        <script src="_static/js/html5shiv.min.js"></script>
+    <![endif]-->
+    
+            <script src="_static/jquery.js?v=5d32c60e"></script>
+            <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+            <script src="_static/documentation_options.js?v=deb3d62e"></script>
+            <script src="_static/doctools.js?v=888ff710"></script>
+            <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/js/theme.js"></script>
+        <link rel="index" title="Index" href="genindex.html" />
+        <link rel="search" title="Search" href="search.html" />
+        <link rel="next" title="Contributing" href="contributing.html" />
+        <link rel="prev" title="tic_tac_toe" href="index.html" /> 
+    </head>
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+    <body class="wy-body-for-nav"> 
+    <div class="wy-grid-for-nav">
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+        <div class="wy-side-scroll">
+            <div class="wy-side-nav-search" >
 
-          
-          
-          <a href="index.html" class="icon icon-home">
-            tic_tac_toe
-          </a>
-              <div class="version">
-                0.0.post1.dev9+g81b0717.d20231025
-              </div>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#note">Note</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributions &amp; Help</a></li>
-<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
-<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/modules.html">Module Reference</a></li>
-</ul>
+            
+            
+            <a href="index.html" class="icon icon-home">
+                tic_tac_toe
+            </a>
+                <div class="version">
+                    0.0.post1.dev9+g81b0717.d20231025
+                </div>
+    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+            </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+                <ul class="current">
+    <li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+    <li class="toctree-l2"><a class="reference internal" href="#note">Note</a></li>
+    </ul>
+    </li>
+    <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributions &amp; Help</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+    <li class="toctree-l1"><a class="reference internal" href="api/modules.html">Module Reference</a></li>
+    </ul>
 
+            </div>
         </div>
-      </div>
-    </nav>
+        </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">tic_tac_toe</a>
-      </nav>
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+            <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+            <a href="index.html">tic_tac_toe</a>
+        </nav>
 
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">tic_tac_toe</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <span class="target" id="readme"></span><a class="reference external image-reference" href="https://pyscaffold.org/"><img alt="Project generated with PyScaffold" src="https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<section id="tic-tac-toe">
-<h1>tic_tac_toe<a class="headerlink" href="#tic-tac-toe" title="Link to this heading"></a></h1>
-<blockquote>
-<div><p>Add a short description here!</p>
-</div></blockquote>
-<p>A longer description of your project goes here…</p>
-<section id="note">
-<span id="pyscaffold-notes"></span><h2>Note<a class="headerlink" href="#note" title="Link to this heading"></a></h2>
-<p>This project has been set up using PyScaffold 4.5. For details and usage
-information on PyScaffold see <a class="reference external" href="https://pyscaffold.org/">https://pyscaffold.org/</a>.</p>
-</section>
-</section>
+        <div class="wy-nav-content">
+            <div class="rst-content">
+            <div role="navigation" aria-label="Page navigation">
+    <ul class="wy-breadcrumbs">
+        <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+        <li class="breadcrumb-item active">tic_tac_toe</li>
+        <li class="wy-breadcrumbs-aside">
+                <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+        </li>
+    </ul>
+    <hr/>
+    </div>
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div itemprop="articleBody">
+                
+    <span class="target" id="readme"></span><a class="reference external image-reference" href="https://pyscaffold.org/"><img alt="Project generated with PyScaffold" src="https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold" /></a>
+    <div class="line-block">
+    <div class="line"><br /></div>
+    </div>
+    <section id="tic-tac-toe">
+    <h1>tic_tac_toe<a class="headerlink" href="#tic-tac-toe" title="Link to this heading"></a></h1>
+    <blockquote>
+    <div><p>Add a short description here!</p>
+    </div></blockquote>
+    <p>A longer description of your project goes here…</p>
+    <section id="note">
+    <span id="pyscaffold-notes"></span><h2>Note<a class="headerlink" href="#note" title="Link to this heading"></a></h2>
+    <p>This project has been set up using PyScaffold 4.5. For details and usage
+    information on PyScaffold see <a class="reference external" href="https://pyscaffold.org/">https://pyscaffold.org/</a>.</p>
+    </section>
+    </section>
 
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="tic_tac_toe" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+            </div>
+            </div>
+            <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+            <a href="index.html" class="btn btn-neutral float-left" title="tic_tac_toe" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+            <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        </div>
+
+    <hr/>
+
+    <div role="contentinfo">
+        <p>&#169; Copyright 2023, Andre Tayamen.</p>
     </div>
 
-  <hr/>
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+        <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+        provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    
 
-  <div role="contentinfo">
-    <p>&#169; Copyright 2023, Andre Tayamen.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+    </footer>
+            </div>
         </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+        </section>
+    </div>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script> 
 
-</body>
-</html>
+    </body>
+    </html>
 
