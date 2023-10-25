@@ -1,4 +1,5 @@
-${bold}I can't seem to upload the output of "tox -e docs" to github but here is the output of "readme.html"
+### I can't seem to upload the output of "tox -e docs" to github but here is the output of "readme.html"
+###
 
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
@@ -132,3 +133,4 @@ information on PyScaffold see <a class="reference external" href="https://pyscaf
 
 </body>
 </html>
+
